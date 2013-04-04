@@ -1,0 +1,10 @@
+{
+  "name": "nerd4nodejs",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node client.js"
+  },
+  "dependencies": {
+    "needle": "0.4.8"
+  }
+}
