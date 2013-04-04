@@ -5,6 +5,7 @@
     "start": "node client.js"
   },
   "dependencies": {
-    "needle": "0.4.8"
+    "needle": "0.4.8",
+    "async": "0.2.6"
   }
 }
