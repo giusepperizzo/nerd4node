@@ -1,11 +1,38 @@
 {
   "name": "nerd4nodejs",
   "version": "0.0.1",
+  "author":"Giuseppe Rizzo <giuseppe.rizzo@eurecom.fr>",
+  "contributors": [ 
+    {
+      "name": "Rapha‘l Troncy",
+      "email": "raphael.troncy@eurecom.fr"
+    },
+    {
+      "name":"Yunjia Li",
+      "email":"yl2@ecs.soton.ac.uk"
+    }
+  ],
   "scripts": {
-    "start": "node client.js"
+    "test": "./node_modules/mocha/bin/mocha test/*.js"
+  },
+  "bin": {
+    "nerd4node": "./bin/nerd4node"
   },
   "dependencies": {
     "needle": "0.4.8",
     "async": "0.2.6"
+  },
+  "description": "Nodejs client for NERD",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/giusepperizzo/nerd4node.git"
+  },
+  "main": "lib/nerd4node.js",
+  "engines": {
+    "node": "~0.6.16"
+  },
+  "devDependencies": {
+   	"mocha": "",
+   	"should": ""
   }
 }
