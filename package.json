@@ -1,12 +1,8 @@
 {
-  "name": "nerd4nodejs",
+  "name": "nerd4node",
   "version": "0.0.1",
   "author":"Giuseppe Rizzo <giuseppe.rizzo@eurecom.fr>",
   "contributors": [ 
-    {
-      "name": "Rapha‘l Troncy",
-      "email": "raphael.troncy@eurecom.fr"
-    },
     {
       "name":"Yunjia Li",
       "email":"yl2@ecs.soton.ac.uk"
