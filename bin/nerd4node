@@ -1,28 +1,30 @@
 var nerd = require("../lib/nerd4node");
 var args = process.argv.slice(2);
+var fs = require('fs');
 
 if(args.length !=1)
 {
 	console.error("APIKey is missing");
 }
 else
-{
-	var text = 'Barack Hussein Obama II born August 4, 1961) is the 44th and current President of the United States, in office since 2009. He is the first African American to hold the office. Born in Honolulu';
-	var result = nerd.
-			annotate('http://nerd.eurecom.fr/api/', 
-	         args[0], 
-	         'combined', 
-	         'text', 
-	          text, 
-	         'oen', 
-	          50*1000, 
-	        function(err, contents){
-	        	if(err)
-	        		console.log(err);
-	        	else
-					console.log(contents);	        		
-	        }
-	);
+{	
+	fs.readFile('./test/resources/test.srt', 'utf8',function(err, text){
+			nerd.annotate(
+				'http://nerd.eurecom.fr/api/', 
+	            args[0], 
+	            'combined', 
+	            'timedtext', 
+	            text, 
+	            'oen', 
+	            50*1000, 
+	            function(err, contents){	
+	            	if(err)
+	        			console.log(err);
+	        		else
+						console.log(contents);	
+	            }
+	        );
+    });
 }
 
 
