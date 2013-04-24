@@ -8,7 +8,7 @@ if(args.length !=1)
 }
 else
 {	
-	fs.readFile('./test/resources/test.srt', 'utf8',function(err, text){
+	fs.readFile('./test/resources/test1.srt', 'utf8',function(err, text){
 			nerd.annotate(
 				'http://nerd.eurecom.fr/api/', 
 	            args[0], 
